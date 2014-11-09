@@ -1,8 +1,8 @@
 Package.describe({
   name: 'peterellisjones:s3-policy-generator',
-  summary: 'Generates S3 signed upload policies in a format designed to be used for upload forms (http://docs.aws.amazon.com/AmazonS3/latest/API/sigv4-HTTPPOSTForms.html)',
+  summary: 'Generates S3 signed upload policies in a format designed to be used for upload forms',
   version: '1.0.0',
-  git: ' /* Fill me in! */ '
+  git: 'https://github.com/peterellisjones/meteor-s3-policy-generator.git'
 });
 
 Package.onUse(function(api) {
@@ -10,7 +10,6 @@ Package.onUse(function(api) {
   Npm.depends({moment: '2.8.3'});
 
   api.use('coffeescript');
-  api.use('mrt:moment');
   api.addFiles('server/s3-policy-generator.coffee', 'server');
   api.export('S3PolicyGenerator');
 });
