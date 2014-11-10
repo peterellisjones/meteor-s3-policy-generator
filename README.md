@@ -4,7 +4,7 @@ meteor-s3-policy-generator
 S3 Policy Generator for Meteor. Designed to work with signed upload forms.
 
 Example:
-```
+```coffee-script
 # server.coffee
 policyGenerator = new S3PolicyGenerator(
   awsAccessKeyId: Meteor.settings.AWS_ACCESS_KEY_ID
