@@ -20,7 +20,7 @@ Meteor.methods ->
       acl: 'public-read'
       maxBytes: 1024 * 1024 * 5
       contentType: 'application/json'
-
+    path = "users/#{Meteor.userId()}.json"
     policyGenerator.generate(path, options)
 
 ````
